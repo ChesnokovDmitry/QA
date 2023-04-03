@@ -1,0 +1,540 @@
+{
+  "id": "e7b6bdad-ed13-4f38-b5d5-991c044c074d",
+  "version": "2.0",
+  "name": "WebUITest_lesson_1",
+  "url": "https://www.aqua-shop.ru/",
+  "tests": [{
+    "id": "363ccfe9-b191-4e2f-b29c-119eacc5206d",
+    "name": "Login",
+    "commands": [{
+      "id": "70c8875c-0fce-4baa-8e74-d6d95faa1442",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aqua-shop.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6556d45-66dc-4287-8d68-804496a7123e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "953x686",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a57e7aa4-8260-42ec-b800-e1eb351f9fc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.\\_account", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//div[@id='main_wrap']/header/div[2]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login.php')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e4b8e69-5f1f-4f3c-9652-1e76809f3fc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=email_address",
+      "targets": [
+        ["id=email_address", "id"],
+        ["name=email_address", "name"],
+        ["css=#email_address", "css:finder"],
+        ["xpath=//input[@id='email_address']", "xpath:attributes"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b9ad563-7094-49cc-9443-afd6b20a5433",
+      "comment": "",
+      "command": "type",
+      "target": "id=email_address",
+      "targets": [
+        ["id=email_address", "id"],
+        ["name=email_address", "name"],
+        ["css=#email_address", "css:finder"],
+        ["xpath=//input[@id='email_address']", "xpath:attributes"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form/div/input", "xpath:position"]
+      ],
+      "value": "dmitrijchesy@ya.ru"
+    }, {
+      "id": "ee979507-a1b6-4e9c-96c4-0829e14feba7",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd721e88-1492-4348-9881-8c643296925a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "qwertyuiop"
+    }, {
+      "id": "c760fa68-ac1d-43b9-92b2-05c7dad8c080",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2b3b987a-68f9-47e4-9f07-0340bb8c0331",
+    "name": "Basket",
+    "commands": [{
+      "id": "a0172c32-68af-45df-aa77-e4c391b6a5ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aqua-shop.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa4d532f-55d4-4ed0-9acb-dc2cb69179b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e8df8f1-ddcd-49e4-8f07-74c701505e94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аквариумы и тумбы",
+      "targets": [
+        ["linkText=Аквариумы и тумбы", "linkText"],
+        ["css=#catalogue-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Аквариумы и тумбы')]", "xpath:link"],
+        ["xpath=//ul[@id='catalogue-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'akvariumy_i_tumbyu/')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Аквариумы и тумбы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b9a2931-c488-4751-99a6-84aa0c593e3a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.category-menu-item:nth-child(4) > .category-menu-item__specification",
+      "targets": [
+        ["css=.category-menu-item:nth-child(4) > .category-menu-item__specification", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div[2]/div[2]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e80382fd-57f0-4a9c-a8ac-73ab4d63c118",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.category-menu-item:nth-child(4) > .category-menu-item__specification",
+      "targets": [
+        ["css=.category-menu-item:nth-child(4) > .category-menu-item__specification", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div[2]/div[2]/a[4]/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cef2b26-46db-471b-8c64-3469d754fd8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.category-menu-item:nth-child(1) > .category-menu-item__name",
+      "targets": [
+        ["css=.category-menu-item:nth-child(1) > .category-menu-item__name", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div[2]/div[2]/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8ec8b6f-a760-4ec8-9007-ac19ab188ba7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.listing-items-wrap:nth-child(10) > .listing-item:nth-child(1) .add-tocart-button",
+      "targets": [
+        ["css=.listing-items-wrap:nth-child(10) > .listing-item:nth-child(1) .add-tocart-button", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div[2]/div[7]/div/div[2]/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'В корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bcd9133-5028-4d59-be14-07c0c2766395",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти в корзину",
+      "targets": [
+        ["linkText=Перейти в корзину", "linkText"],
+        ["css=#first_buy > .simple-button:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти в корзину')]", "xpath:link"],
+        ["xpath=//div[@id='first_buy']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shopping_cart.php')])[2]", "xpath:href"],
+        ["xpath=//body/div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a71075ba-96e6-4032-a810-dc45c1596e52",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,422.3999938964844)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b53a9d65-545c-49eb-8220-286a6a63dda7",
+    "name": "Search",
+    "commands": [{
+      "id": "7360aff5-d328-40ec-b435-f1319c21b21c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aqua-shop.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1c8dc5e-8f43-4889-8933-861419f7d619",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1166aa9d-eff5-48d2-9367-cf6d0acdf44c",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_input",
+      "targets": [
+        ["id=search_input", "id"],
+        ["name=keywords", "name"],
+        ["css=#search_input", "css:finder"],
+        ["xpath=//input[@id='search_input']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0391265-5cac-48bc-b7a9-04e54c9201a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_input",
+      "targets": [
+        ["id=search_input", "id"],
+        ["name=keywords", "name"],
+        ["css=#search_input", "css:finder"],
+        ["xpath=//input[@id='search_input']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "фильтры"
+    }, {
+      "id": "e50f7e7e-5b2a-4661-9439-b5f1c2544590",
+      "comment": "",
+      "command": "click",
+      "target": "css=.find-button",
+      "targets": [
+        ["css=.find-button", "css:finder"],
+        ["xpath=//input[@value='Найти']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "501bd5a7-7179-4751-a1cb-bf4548ab23e5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,211.1999969482422)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3eed68de-63b5-4a37-b4a8-5f85025d361c",
+    "name": "Filter",
+    "commands": [{
+      "id": "e6304c70-2a7f-4be6-bec9-f336cb6d9c0a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aqua-shop.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbc1907b-b26e-4de2-8230-af8ad7762cf5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ce83642-30ac-4896-a346-159feae837e8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,105.5999984741211)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e443e805-41a0-4382-bef2-2e1a23aba518",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аквариумы и тумбы",
+      "targets": [
+        ["linkText=Аквариумы и тумбы", "linkText"],
+        ["css=#catalogue-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Аквариумы и тумбы')]", "xpath:link"],
+        ["xpath=//ul[@id='catalogue-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'akvariumy_i_tumbyu/')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Аквариумы и тумбы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19758a3a-8d5d-4ffb-b8f3-e6b7cd4f8548",
+      "comment": "",
+      "command": "click",
+      "target": "css=.category-menu-item:nth-child(1) > .category-menu-item__name",
+      "targets": [
+        ["css=.category-menu-item:nth-child(1) > .category-menu-item__name", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div[2]/div[2]/div[2]/a/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5830eb87-27ba-4cc4-aa99-324068ffb73a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_in_group:nth-child(10) > label",
+      "targets": [
+        ["css=.\\_in_group:nth-child(10) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[8]/label", "xpath:idRelative"],
+        ["xpath=//div[8]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'меньше 10 литров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d9f1619-889e-4221-ac71-5333378a044d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_in_group:nth-child(11) > label",
+      "targets": [
+        ["css=.\\_in_group:nth-child(11) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[9]/label", "xpath:idRelative"],
+        ["xpath=//div[9]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'от 10 до 30 литров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40226441-2884-4bc4-9cec-e892e353186a",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(3)",
+      "targets": [
+        ["css=label:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89322145-fe37-4030-a5d7-1edbb9a50277",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox_item:nth-child(27) > label",
+      "targets": [
+        ["css=.checkbox_item:nth-child(27) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[25]/label", "xpath:idRelative"],
+        ["xpath=//div[25]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'пресноводные')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ea261da-e83c-4454-879e-26694b73dc30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters__manufacture > .checkbox_item:nth-child(2) > label",
+      "targets": [
+        ["css=.filters__manufacture > .checkbox_item:nth-child(2) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[82]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[82]/div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a446b51b-3c4a-4dc0-bee4-10e2ac6f4439",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters__manufacture > .checkbox_item:nth-child(3) > label",
+      "targets": [
+        ["css=.filters__manufacture > .checkbox_item:nth-child(3) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[82]/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[82]/div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Juwel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7fd2893-4590-44f6-bc41-47a41c3f2cd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters__manufacture > .checkbox_item:nth-child(4) > label",
+      "targets": [
+        ["css=.filters__manufacture > .checkbox_item:nth-child(4) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[82]/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[82]/div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Eheim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78462b4d-2e95-411d-9e19-6ead0cc7ef7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters__manufacture > .checkbox_item:nth-child(5) > label",
+      "targets": [
+        ["css=.filters__manufacture > .checkbox_item:nth-child(5) > label", "css:finder"],
+        ["xpath=//form[@id='filters_f']/div/div[82]/div[5]/label", "xpath:idRelative"],
+        ["xpath=//div[82]/div[5]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Hagen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91d3f12-203c-4975-8d8e-cfab2a288e65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit_filters_manufacture > .simple-button",
+      "targets": [
+        ["css=.submit_filters_manufacture > .simple-button", "css:finder"],
+        ["xpath=//input[@value='Показать выбранное']", "xpath:attributes"],
+        ["xpath=//form[@id='filters_f']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "550e4788-9692-4909-aa45-3865c2edba88",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,156.8000030517578)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e8350301-6865-460b-afc0-7c3de621273d",
+    "name": "MenuNavigation",
+    "commands": [{
+      "id": "f6e47638-5d39-4433-8aa1-4d38fa874fc1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aqua-shop.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41c8116e-826c-448c-97eb-63cdbfa27ff8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69c39221-4b59-451b-b95b-3bce36ca724d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_discount",
+      "targets": [
+        ["css=.\\_discount", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/header/div[2]/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/about/discount')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0394b9e6-2298-40b8-983e-568193c84241",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.second-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=//div[@id='main_wrap']/header/div[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog.php')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d16480-665b-4c1f-99ca-f94eae2a910e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аквариумы и тумбы",
+      "targets": [
+        ["linkText=Аквариумы и тумбы", "linkText"],
+        ["css=#catalogue-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Аквариумы и тумбы')]", "xpath:link"],
+        ["xpath=//ul[@id='catalogue-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'akvariumy_i_tumbyu/')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Аквариумы и тумбы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d416363-cd43-495c-b0f3-417751bd4a1b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,211.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0089d9de-67d2-47df-8141-dcf1f89732b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Аквариумы",
+      "targets": [
+        ["linkText=Аквариумы", "linkText"],
+        ["css=.catalogue-menu__submenu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Аквариумы')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='catalogue-menu']/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'akvariumy_i_tumbyu/aquariumy/')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a143436-b17c-424c-a8fc-46a4cddb5c81",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a > span",
+      "targets": [
+        ["css=li:nth-child(2) > a > span", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div/ol/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Аквариумы и тумбы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd0d9f18-a9e3-4349-aaf9-5ee6360e6fef",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol > li span",
+      "targets": [
+        ["css=ol > li span", "css:finder"],
+        ["xpath=//div[@id='main_wrap']/div/div/ol/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Главная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2cbfe7e5-7547-4242-bd92-018ed29bc1fa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["363ccfe9-b191-4e2f-b29c-119eacc5206d", "e8350301-6865-460b-afc0-7c3de621273d", "b53a9d65-545c-49eb-8220-286a6a63dda7", "2b3b987a-68f9-47e4-9f07-0340bb8c0331", "3eed68de-63b5-4a37-b4a8-5f85025d361c"]
+  }],
+  "urls": ["https://www.planeta-sport.ru/", "https://letovmeste.ru/", "https://www.aqua-shop.ru/"],
+  "plugins": []
+}
